@@ -22,7 +22,8 @@ let score = 0 ;
 let highScore = localStorage.getItem("highScore") || 0;
 let time = `00-00`;
 highScoreElement.innerText = highScore;
-
+let min = 0;
+let sec = 0;
 let snake = [{ x: 1, y: 3 }];
 
 
@@ -97,10 +98,27 @@ if (score > highScore) {
 
 // start ka kaam yaha hai
 startButton.addEventListener("click", () => {
+    
     modal.style.display = "none";
-    direction = "";
+    
+    timerIntervalId = setInterval(() => {
+
+        sec++;
+
+        if (sec === 60) {
+            sec = 0;
+            min++;
+        }
+
+        time = `${String(min).padStart(2, '0')}-${String(sec).padStart(2, '0')}`;
+        timeElement.innerText = time;
+
+    }, 1000);
+
     intervalId = setInterval(render, 300);
 });
+
+
 
 // restar ka kaam yaha
 restartButton.addEventListener("click", () => {
