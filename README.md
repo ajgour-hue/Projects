@@ -24,3 +24,5 @@ If the snake hits the wall or goes out of the board, the game will end.
 
 
 ![Snake Game Screenshot ](https://github.com/ajgour-hue/Projects/blob/982b426fb469ea4ffefba70b820f608f261b27e0/Screenshot%202025-11-20%20224652.png)
+
+![Snake Game Screenshot ](https://github.com/ajgour-hue/Projects/blob/a318b678ffaab4c2f2423610115a6b9480a66845/Screenshot%202025-11-20%20224720.png)
