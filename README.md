@@ -1,4 +1,4 @@
-🐍 Snake Game — README (Beginner Friendly)
+🐍 Snake Game — 
 📌 Introduction
 
 This is my Snake Game project, built using HTML, CSS, and JavaScript.
